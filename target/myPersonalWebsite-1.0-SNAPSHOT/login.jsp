@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : Jun 17, 2025, 9:50:02 PM
-    Author     : Admin
---%>
-
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 
 <!DOCTYPE html> 
