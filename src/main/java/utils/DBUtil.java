@@ -10,7 +10,7 @@ public class DBUtil {
     private static final String DB_USER = "app";
     private static final String DB_PASSWORD = "app";
     
-    public static Connection getConnetcion() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
     }
 }

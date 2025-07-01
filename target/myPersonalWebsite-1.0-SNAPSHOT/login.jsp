@@ -50,6 +50,11 @@
                 color: red;
                 margin-top: 10px;
             }
+            
+            a {
+                margin-top: 20px;
+                color: black;
+            }
         </style>
     </head>
 
@@ -65,6 +70,8 @@
 
         <input type="submit" value="Login">
     </form>
+    <a href="register.jsp">Don't have an account? Register here</a>
+
 
 
     <%-- Error display if login fails --%>

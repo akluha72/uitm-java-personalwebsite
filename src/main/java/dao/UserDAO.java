@@ -13,7 +13,7 @@ public class UserDAO {
         boolean isValid = false;
         String sql = "SELECT * FROM users WHERE username = ? AND password = ?";
 
-        try (Connection conn = DBUtil.getConnetcion(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+        try (Connection conn = DBUtil.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
            
             stmt.setString(1, username);
             stmt.setString(2, password);
@@ -29,5 +29,22 @@ public class UserDAO {
         }
         
         return isValid;
+    }
+    
+    public boolean registerUser(String username, String password) {
+        String sql = "INSERT INTO users (username, password) VALUES (?,?)";
+        
+        try(Connection conn = DBUtil.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+            
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            
+            stmt.executeUpdate();
+            return true;
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
