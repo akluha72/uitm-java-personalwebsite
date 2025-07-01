@@ -1,4 +1,10 @@
-com\uitm\mypersonalwebsite\resources\JavaEE8Resource.class
+Controller\ViewFeedbackServlet.class
 Controller\LoginServlet.class
+dao\FeedbackDAO.class
+Controller\RegisterServlet.class
+Controller\FeedbackServlet.class
+com\uitm\mypersonalwebsite\resources\JavaEE8Resource.class
+dao\UserDAO.class
+utils\DBUtil.class
 Controller\LogoutServlet.class
 com\uitm\mypersonalwebsite\JAXRSConfiguration.class
