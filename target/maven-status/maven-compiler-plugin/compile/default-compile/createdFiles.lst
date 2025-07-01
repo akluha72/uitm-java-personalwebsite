@@ -1,4 +1,4 @@
 com\uitm\mypersonalwebsite\resources\JavaEE8Resource.class
-com\uitm\mypersonalwebsite\Logout.class
-com\uitm\mypersonalwebsite\LoginServlet.class
+Controller\LoginServlet.class
+Controller\LogoutServlet.class
 com\uitm\mypersonalwebsite\JAXRSConfiguration.class
